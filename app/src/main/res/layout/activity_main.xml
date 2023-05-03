@@ -6,13 +6,47 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="219dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="56dp"
+        android:ems="10"
+        android:hint="User Name"
+        android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="211dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username" />
+
+    <Button
+        android:id="@+id/btnsignup"
+        android:layout_width="133dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="44dp"
+        android:text="register"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Password" />
+
+    <Button
+        android:id="@+id/btnsignin"
+        android:layout_width="317dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="44dp"
+        android:text="Existing user! Go to Sign in page"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnsignup" />
 </androidx.constraintlayout.widget.ConstraintLayout>
